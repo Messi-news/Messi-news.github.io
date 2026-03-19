@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Insights | Latest Messi & Tech News</title>
+    <style>
+        :root { --bbc-red: #bb1919; --dark-grey: #333; --light-grey: #f6f6f6; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background: #fff; color: var(--dark-grey); }
+        
+        /* Header & Logo */
+        header { background: var(--bbc-red); color: white; padding: 15px 5%; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+        nav { display: none; } /* Simplified for mobile-first */
+
+        /* AdSense Space - Top */
+        .ad-slot-top { background: var(--light-grey); text-align: center; padding: 10px; margin: 10px auto; max-width: 970px; border: 1px solid #ddd; font-size: 12px; color: #999; }
+
+        /* Main Content Grid */
+        .container { max-width: 1100px; margin: auto; padding: 20px; display: grid; grid-template-columns: 3fr 1fr; gap: 30px; }
+
+        /* Breaking News / Hero */
+        .hero-article { border-bottom: 4px solid var(--bbc-red); margin-bottom: 30px; }
+        .hero-img { width: 100%; height: auto; border-radius: 4px; }
+        .hero-title { font-size: 32px; margin: 15px 0; color: #000; text-decoration: none; display: block; }
+        .hero-title:hover { color: var(--bbc-red); }
+
+        /* Amharic Section */
+        .amharic-box { background: #fffdf0; padding: 20px; border-right: 5px solid var(--bbc-red); margin: 20px 0; direction: ltr; text-align: left; }
+        .lang-tag { background: var(--bbc-red); color: white; padding: 2px 8px; font-size: 12px; font-weight: bold; }
+
+        /* Sidebar Ads & Info */
+        .sidebar { border-left: 1px solid #eee; padding-left: 20px; }
+        .ad-slot-side { width: 100%; height: 250px; background: #fafafa; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #bbb; }
+
+        /* News Cards */
+        .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .card img { width: 100%; height: 150px; object-fit: cover; }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
+            .news-grid { grid-template-columns: 1fr; }
+            .hero-title { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">GLOBAL INSIGHTS</div>
+        <div style="font-size: 12px;">LIVE REPORTING</div>
+    </header>
+
+    <div class="ad-slot-top">
+        ADVERTISEMENT<br>
+        </div>
+
+    <div class="container">
+        <main>
+            <article class="hero-article">
+                <span class="lang-tag">FOOTBALL / እግር ኳስ</span>
+                <a href="#" class="hero-title">Lionel Messi Redefines Football in 2026: The Legacy Continues</a>
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Messi" class="hero-img">
+                <p>As the 2026 season unfolds, Lionel Messi continues to break records. Fans across Ethiopia and the world are witnessing a masterclass in leadership and skill.</p>
+            </article>
+
+            <div class="amharic-box">
+                <h2 style="color: var(--bbc-red);">ሊዮኔል ሜሲ በ2026 ድንቅ ብቃቱን ቀጥሏል</h2>
+                <p>በአለም ዙሪያ የሚገኙ የእግር ኳስ አፍቃሪዎች የሊዮኔል ሜሲን አስደናቂ እንቅስቃሴዎች በመመልከት ላይ ናቸው። በኢትዮጵያ የሚገኙ የሜሲ ደጋፊዎችም ተጫዋቹ ለብሄራዊ ቡድኑ እና ለክለቡ እያደረገ ያለውን አስተዋፅኦ በከፍተኛ ጉጉት እየተከታተሉ ይገኛሉ።</p>
+            </div>
+
+            <div class="news-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80" alt="Tech">
+                    <h3>Look-Hacker System Update</h3>
+                    <p>New security tools released for young developers worldwide.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80" alt="Chips">
+                    <h3>2026 Tech Trends</h3>
+                    <p>How AI and coding are changing the lives of students in Ethiopia.</p>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h3 style="border-bottom: 2px solid #000;">SPONSORED</h3>
+            <div class="ad-slot-side">AD BLOCK 1</div>
+            
+            <h3 style="border-bottom: 2px solid #000;">LATEST UPDATES</h3>
+            <ul style="padding-left: 20px; font-size: 14px;">
+                <li>Messi Goals: 2026 Stats</li>
+                <li>Coding for 12-Year-Olds</li>
+                <li>Ethiopian Tech News</li>
+            </ul>
+            <div class="ad-slot-side">AD BLOCK 2</div>
+        </aside>
+    </div>
+
+    <footer style="background: #333; color: white; padding: 40px; text-align: center; margin-top: 50px;">
+        <p>&copy; 2026 Global Insights | Developed by a 12-year-old coding pro</p>
+        <p><a href="privacy.html" style="color: #ccc;">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
