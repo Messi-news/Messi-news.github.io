@@ -3,105 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Insights | Latest Messi & Tech News</title>
+    <title>Global Insights | Messi 2026 Live Updates</title>
     <style>
         :root { --bbc-red: #bb1919; --dark-grey: #333; --light-grey: #f6f6f6; }
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background: #fff; color: var(--dark-grey); }
         
         /* Header & Logo */
-        header { background: var(--bbc-red); color: white; padding: 15px 5%; display: flex; align-items: center; justify-content: space-between; }
-        .logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
-        nav { display: none; } /* Simplified for mobile-first */
+        header { background: var(--bbc-red); color: white; padding: 10px 5%; display: flex; align-items: center; justify-content: space-between; }
+        .logo-box { background: white; color: var(--bbc-red); padding: 5px 10px; font-weight: bold; font-size: 22px; }
 
-        /* AdSense Space - Top */
-        .ad-slot-top { background: var(--light-grey); text-align: center; padding: 10px; margin: 10px auto; max-width: 970px; border: 1px solid #ddd; font-size: 12px; color: #999; }
+        /* BREAKING NEWS TICKER */
+        .ticker-wrap { background: #222; color: #fff; padding: 10px 0; overflow: hidden; white-space: nowrap; border-bottom: 2px solid var(--bbc-red); }
+        .ticker { display: inline-block; animation: marquee 30s linear infinite; font-weight: bold; font-size: 14px; }
+        .ticker span { margin-right: 50px; color: #00FF41; } /* Green for stats */
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
 
-        /* Main Content Grid */
+        /* Content Layout */
         .container { max-width: 1100px; margin: auto; padding: 20px; display: grid; grid-template-columns: 3fr 1fr; gap: 30px; }
-
-        /* Breaking News / Hero */
         .hero-article { border-bottom: 4px solid var(--bbc-red); margin-bottom: 30px; }
-        .hero-img { width: 100%; height: auto; border-radius: 4px; }
-        .hero-title { font-size: 32px; margin: 15px 0; color: #000; text-decoration: none; display: block; }
-        .hero-title:hover { color: var(--bbc-red); }
+        .hero-img { width: 100%; height: auto; border-radius: 4px; border: 1px solid #ddd; }
+        .hero-title { font-size: 32px; margin: 15px 0; color: #000; text-decoration: none; display: block; font-weight: 800; }
+        
+        .amharic-box { background: #fffdf0; padding: 20px; border-left: 5px solid var(--bbc-red); margin: 20px 0; }
+        .lang-tag { background: var(--bbc-red); color: white; padding: 2px 8px; font-size: 12px; font-weight: bold; margin-bottom: 10px; display: inline-block; }
 
-        /* Amharic Section */
-        .amharic-box { background: #fffdf0; padding: 20px; border-right: 5px solid var(--bbc-red); margin: 20px 0; direction: ltr; text-align: left; }
-        .lang-tag { background: var(--bbc-red); color: white; padding: 2px 8px; font-size: 12px; font-weight: bold; }
+        /* Sidebar & Ad Slots */
+        .ad-slot { background: #f9f9f9; border: 1px dashed #ccc; text-align: center; padding: 20px; color: #999; margin-bottom: 20px; font-size: 12px; }
 
-        /* Sidebar Ads & Info */
-        .sidebar { border-left: 1px solid #eee; padding-left: 20px; }
-        .ad-slot-side { width: 100%; height: 250px; background: #fafafa; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #bbb; }
+        /* Contact Section */
+        .contact-section { background: var(--light-grey); padding: 30px; margin-top: 40px; border-radius: 8px; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .send-btn { background: var(--bbc-red); color: white; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; }
 
-        /* News Cards */
-        .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .card { border-bottom: 1px solid #eee; padding-bottom: 15px; }
-        .card img { width: 100%; height: 150px; object-fit: cover; }
-
-        /* Mobile View */
-        @media (max-width: 768px) {
-            .container { grid-template-columns: 1fr; }
-            .news-grid { grid-template-columns: 1fr; }
-            .hero-title { font-size: 24px; }
-        }
+        @media (max-width: 768px) { .container { grid-template-columns: 1fr; } .hero-title { font-size: 24px; } }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo">GLOBAL INSIGHTS</div>
-        <div style="font-size: 12px;">LIVE REPORTING</div>
+        <div class="logo-box">GI</div>
+        <div style="font-size: 18px; font-weight: bold;">GLOBAL INSIGHTS</div>
+        <div style="font-size: 12px;">2026 EDITION</div>
     </header>
 
-    <div class="ad-slot-top">
-        ADVERTISEMENT<br>
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span>[BREAKING] MESSI 2026 STATS: 12 GOALS IN 10 GAMES</span>
+            <span>TOTAL TROPHIES: 46 (WORLD RECORD)</span>
+            <span>AGE: 38 YEARS OLD</span>
+            <span>LATEST: MESSI HINTS AT 2026 WORLD CUP PARTICIPATION</span>
+            <span>[አስቸኳይ መረጃ] ሊዮኔል ሜሲ በ2026 12 ግቦችን አስቆጥሯል</span>
+            <span>ሜሲ በአጠቃላይ 46 ዋንጫዎችን በማንሳት የአለምን ክብረ ወሰን ይዟል</span>
         </div>
+    </div>
 
     <div class="container">
         <main>
             <article class="hero-article">
-                <span class="lang-tag">FOOTBALL / እግር ኳስ</span>
-                <a href="#" class="hero-title">Lionel Messi Redefines Football in 2026: The Legacy Continues</a>
-                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Messi" class="hero-img">
-                <p>As the 2026 season unfolds, Lionel Messi continues to break records. Fans across Ethiopia and the world are witnessing a masterclass in leadership and skill.</p>
+                <span class="lang-tag">WORLD FOOTBALL</span>
+                <a href="#" class="hero-title">The GOAT in 2026: Messi’s Incredible Journey Continues at Age 38</a>
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Messi 2026" class="hero-img">
+                <p>Despite being 38 years old, Lionel Messi is showing no signs of slowing down. With 12 goals already in the 2026 season and a trophy cabinet boasting 46 major titles, he remains the undisputed king of football.</p>
             </article>
 
             <div class="amharic-box">
-                <h2 style="color: var(--bbc-red);">ሊዮኔል ሜሲ በ2026 ድንቅ ብቃቱን ቀጥሏል</h2>
-                <p>በአለም ዙሪያ የሚገኙ የእግር ኳስ አፍቃሪዎች የሊዮኔል ሜሲን አስደናቂ እንቅስቃሴዎች በመመልከት ላይ ናቸው። በኢትዮጵያ የሚገኙ የሜሲ ደጋፊዎችም ተጫዋቹ ለብሄራዊ ቡድኑ እና ለክለቡ እያደረገ ያለውን አስተዋፅኦ በከፍተኛ ጉጉት እየተከታተሉ ይገኛሉ።</p>
+                <h2 style="color: var(--bbc-red);">የሜሲ የ2026 አስደናቂ ጉዞ</h2>
+                <p>ሊዮኔል ሜሲ በ38 አመቱ አሁንም በአለም እግር ኳስ ላይ የበላይነቱን እያሳየ ይገኛል። በ2026 የውድድር ዘመን እስካሁን 12 ግቦችን ያስቆጠረ ሲሆን፣ አጠቃላይ የዋንጫ ብዛቱንም ወደ 46 አሳድጓል። ይህም በአለም እግር ኳስ ታሪክ ከፍተኛው የዋንጫ ቁጥር ነው።</p>
             </div>
 
-            <div class="news-grid">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80" alt="Tech">
-                    <h3>Look-Hacker System Update</h3>
-                    <p>New security tools released for young developers worldwide.</p>
-                </div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80" alt="Chips">
-                    <h3>2026 Tech Trends</h3>
-                    <p>How AI and coding are changing the lives of students in Ethiopia.</p>
-                </div>
+            <div class="contact-section">
+                <h3>Contact Global Insights</h3>
+                <p>Have a news tip or feedback? Send us a message!</p>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="4" placeholder="Your News Tip..."></textarea>
+                    <button type="submit" class="send-btn">SEND MESSAGE</button>
+                </form>
             </div>
         </main>
 
-        <aside class="sidebar">
-            <h3 style="border-bottom: 2px solid #000;">SPONSORED</h3>
-            <div class="ad-slot-side">AD BLOCK 1</div>
-            
-            <h3 style="border-bottom: 2px solid #000;">LATEST UPDATES</h3>
-            <ul style="padding-left: 20px; font-size: 14px;">
-                <li>Messi Goals: 2026 Stats</li>
-                <li>Coding for 12-Year-Olds</li>
-                <li>Ethiopian Tech News</li>
+        <aside>
+            <div class="ad-slot">ADVERTISEMENT<br>(AdSense Slot 1)</div>
+            <h3 style="border-bottom: 2px solid #000;">QUICK STATS</h3>
+            <ul style="list-style: none; padding: 0; font-size: 14px;">
+                <li style="padding: 10px 0; border-bottom: 1px solid #eee;">🏆 Trophies: 46</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid #eee;">⚽ 2026 Goals: 12</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid #eee;">🎂 Age: 38</li>
+                <li style="padding: 10px 0; border-bottom: 1px solid #eee;">📍 Current Year: 2026</li>
             </ul>
-            <div class="ad-slot-side">AD BLOCK 2</div>
+            <div class="ad-slot">ADVERTISEMENT<br>(AdSense Slot 2)</div>
         </aside>
     </div>
 
-    <footer style="background: #333; color: white; padding: 40px; text-align: center; margin-top: 50px;">
-        <p>&copy; 2026 Global Insights | Developed by a 12-year-old coding pro</p>
-        <p><a href="privacy.html" style="color: #ccc;">Privacy Policy</a></p>
+    <footer style="background: #222; color: white; padding: 30px; text-align: center;">
+        <p>&copy; 2026 Global Insights News | Ethiopia</p>
+        <p><a href="privacy.html" style="color: #00FF41; text-decoration: none;">Privacy Policy</a></p>
     </footer>
 
 </body>
